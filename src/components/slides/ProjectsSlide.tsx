@@ -16,7 +16,15 @@ export function ProjectsSlide({ projects }: ProjectsSlideProps) {
           {projects.map((project, i) => (
             <div key={project.id} className={`chip rounded-lg p-5 r r${Math.min(i + 3, 6)}`}>
               <div className="flex items-start justify-between mb-3">
-                <h3 className="font-display font-medium text-base">{project.name}</h3>
+                <h3 className="font-display font-medium text-base">
+                  {project.url ? (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="grad-text hover:underline">
+                      {project.name}
+                    </a>
+                  ) : (
+                    project.name
+                  )}
+                </h3>
                 <span className="font-mono text-[10px] text-[color:var(--text-muted)]">{project.index}</span>
               </div>
               <p className="text-sm text-[color:var(--text-muted)] mb-4">{project.description}</p>
@@ -27,6 +35,21 @@ export function ProjectsSlide({ projects }: ProjectsSlideProps) {
                   </span>
                 ))}
               </div>
+              {project.stores && project.stores.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-3 pt-3 border-t border-white/10">
+                  {project.stores.map((store) => (
+                    <a
+                      key={store.label}
+                      href={store.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-medium grad-text hover:underline"
+                    >
+                      📲 {store.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
 

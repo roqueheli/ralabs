@@ -13,7 +13,7 @@ import { ContactSlide } from "@/components/slides/ContactSlide";
 import { slides } from "@/data/slides";
 import { projects } from "@/data/projects";
 import { processSteps } from "@/data/process";
-import { stackItems } from "@/data/stack";
+import { stackCategories } from "@/data/stack";
 
 const ACTIVE_THRESHOLD = 0.55;
 
@@ -87,7 +87,7 @@ export function SlidesExperience() {
         <HeroSlide />
         <ProjectsSlide projects={projects} />
         <ProcessSlide steps={processSteps} />
-        <StackSlide items={stackItems} />
+        <StackSlide categories={stackCategories} />
         <ContactSlide />
       </div>
     </>

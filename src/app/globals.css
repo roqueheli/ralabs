@@ -303,6 +303,32 @@ body {
   transform: scale(1);
 }
 
+/* stack card hover glow */
+.stack-card {
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stack-card:hover {
+  border-color: rgba(77, 238, 234, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 24px rgba(77, 238, 234, 0.1);
+}
+
+/* circuit connection lines */
+.circuit-line {
+  stroke: var(--cyan);
+  stroke-width: 1;
+  stroke-dasharray: 6 4;
+  animation: dash-flow 2.5s linear infinite;
+}
+@keyframes dash-flow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -20;
+  }
+}
+
 .scrollcue {
   position: absolute;
   bottom: 34px;
