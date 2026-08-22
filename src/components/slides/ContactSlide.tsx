@@ -117,7 +117,7 @@ export function ContactSlide() {
             </a>
 
             <a
-              href="https://wa.me/56992469431?text=Hola%2C%20vengo%20desde%20ralabs.co%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto."
+              href="https://wa.me/56992469431?text=Hola%2C%20vengo%20desde%20ralabs.com%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-ghost px-7 py-3 rounded-md text-sm inline-flex items-center gap-2 hover:border-[#25D366]"
