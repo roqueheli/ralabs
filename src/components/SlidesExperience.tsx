@@ -9,6 +9,7 @@ import { HeroSlide } from "@/components/slides/HeroSlide";
 import { ProjectsSlide } from "@/components/slides/ProjectsSlide";
 import { ProcessSlide } from "@/components/slides/ProcessSlide";
 import { StackSlide } from "@/components/slides/StackSlide";
+import { ArchitectureSlide } from "@/components/slides/ArchitectureSlide";
 import { ContactSlide } from "@/components/slides/ContactSlide";
 import { slides } from "@/data/slides";
 import { projects } from "@/data/projects";
@@ -88,6 +89,7 @@ export function SlidesExperience() {
         <ProjectsSlide projects={projects} />
         <ProcessSlide steps={processSteps} />
         <StackSlide categories={stackCategories} />
+        <ArchitectureSlide />
         <ContactSlide />
       </div>
     </>

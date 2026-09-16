@@ -16,7 +16,7 @@ export interface ProcessStep {
   delay: string;
 }
 
-export type SlideId = "hero" | "proyectos" | "proceso" | "stack" | "contacto";
+export type SlideId = "hero" | "proyectos" | "proceso" | "stack" | "arquitectura" | "contacto";
 
 export interface SlideMeta {
   id: SlideId;

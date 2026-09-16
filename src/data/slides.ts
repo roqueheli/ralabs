@@ -5,5 +5,6 @@ export const slides: SlideMeta[] = [
   { id: "proyectos", label: "Proyectos" },
   { id: "proceso", label: "Proceso" },
   { id: "stack", label: "Stack" },
+  { id: "arquitectura", label: "Arquitectura" },
   { id: "contacto", label: "Contacto" },
 ];
