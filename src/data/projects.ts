@@ -24,8 +24,35 @@ export const projects: Project[] = [
     url: "https://www.klipperapp.com",
   },
   {
-    id: "barber-consulting",
+    id: "klipperapp-tienda",
     index: "/03",
+    name: "KlipperApp Tienda",
+    description:
+      "Tienda online por negocio: catálogo propio, checkout con Stripe, pagos por país, campañas con Meta Pixel y ventas.",
+    stack: ["Next.js", "Rails", "Stripe Connect", "Meta Pixel"],
+    url: "https://www.klipperapp.com",
+  },
+  {
+    id: "dra-carolina-cruz",
+    index: "/04",
+    name: "Dra. Carolina Cruz",
+    description:
+      "Landing para médico cirujano con CMS, reseñas moderadas, formulario anti-spam y correos transaccionales.",
+    stack: ["Next.js", "Sanity", "Tailwind", "Resend"],
+    url: "https://dracarolinacruz.com",
+  },
+  {
+    id: "sirvofood",
+    index: "/05",
+    name: "SirvoFood",
+    description:
+      "Gestión de restaurantes multi-sucursal: mesas, caja, inventario con recetas, pedidos online con Mercado Pago y estadísticas.",
+    stack: ["Next.js", "Rails", "PostgreSQL", "PWA"],
+    url: "https://www.sirvofood.com",
+  },
+  {
+    id: "barber-consulting",
+    index: "/06",
     name: "Barber Consulting",
     description:
       "Landing page con animaciones avanzadas y CMS headless para consultora de barberías.",
@@ -34,7 +61,7 @@ export const projects: Project[] = [
   },
   {
     id: "pm-construcciones",
-    index: "/04",
+    index: "/07",
     name: "PM Construcciones",
     description:
       "Sitio web corporativo para constructora con CMS, galería de servicios y formulario de contacto.",
@@ -43,7 +70,7 @@ export const projects: Project[] = [
   },
   {
     id: "lynk-portal",
-    index: "/05",
+    index: "/08",
     name: "Lynk Portal",
     description:
       "Portal web con contenido dinámico gestionado desde Sanity CMS y styled-components.",
@@ -52,7 +79,7 @@ export const projects: Project[] = [
   },
   {
     id: "root-studio",
-    index: "/06",
+    index: "/09",
     name: "Root Studio",
     description:
       "Sitio web para estudio creativo con gestión de contenido headless.",
